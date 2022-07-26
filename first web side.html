@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.a1{
+			width: 100%;
+			height: 100vh;
+			background-image: url(img2.jfif);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.a2{
+			width: 85%;
+			margin: auto;
+			padding: 35px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+	
+		}
+
+		.a3{
+			width: 120px;
+			cursor: pointer;
+		}
+
+		.a1 ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 20px;
+			position: relative;
+		}
+
+.a1 ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+.a1 ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	transition: 0.5s;
+}
+
+.a1 ul li:hover::after{
+	width: 100%;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: aqua;
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+
+}
+
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid black;
+	background: transparent;
+	color: orange;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+
+}
+
+button:hover{
+	border: none;
+}
+
+	</style>
+</head>
+<body>
+<div class="a1">
+	<div class="a2">
+		<img src="img3.png">
+
+
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">bedroom</a></li>
+			<li><a href="#">dining</a></li>
+			<li><a href="#">kitchen</a></li>
+		</ul>
+		
+	</div>
+<div class="content">
+	<h1>DESIGN YOUR HOUSE</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div>
+		<button type="button"><span></span>SUBMIT</button>
+		<button type="button"><span></span>LOGIN</button>
+	</div>
+	
+</div>
+
+</div>
+
+
+</body>
+</html>

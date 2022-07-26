@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		body{
+			counter-reset: section;
+		}
+		h1::before{
+
+		counter-increment: section;
+		content: "part" counter(section)":";
+
+				}
+				
+		h2::before{
+
+		counter-increment: section;
+		content: "part" counter(section)":";
+
+				}
+				
+		h3::before{
+
+		counter-increment: section;
+		content: "part" counter(section)":";
+
+				}
+				
+		
+	</style>
+</head>
+<body>
+	<h1>this is web page</h1>
+	<h2>this is web page</h2>
+	<h3>this is web page</h3>
+	
+</body>
+</html>
